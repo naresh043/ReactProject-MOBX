@@ -1,0 +1,156 @@
+.loginContainer {
+    display: grid;
+    place-items: center;
+    height: 87vh;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/07/29/64/91/1000_F_729649141_s4GhpR3YuF70bau356SmRMLGPdDhNApe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 5px black;
+    gap: 10px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    z-index: 2;
+    border-radius: 10px;
+  }
+  
+  .loginContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 1;
+  }
+  
+  .login-Input-container {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 2px 10px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loginForm input {
+    padding: 8px;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    background-color: transparent;
+    /* color: white; */
+    /* color: rgb(6, 6, 6); */
+  }
+  .loginForm input::placeholder {
+    color: rgba(39, 38, 38, 0.863);
+  }
+  .eyeSymbol {
+    cursor: pointer;
+  }
+  
+  .loginBtn,.GuestBtn {
+    width: 60%;
+    padding: 10px 0;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: rgba(255, 94, 0, 0.993);
+    color: white;
+    font-weight: 600;
+  }
+  .GuestBtn{
+    background-color:#021B79 ;
+  }
+
+  .registernow {
+    margin-left: 5px;
+    /* text-decoration: underline dashed; */
+    font-weight: 600;
+    color: white;
+    /* color: rgba(255, 94, 0, 0.993); */
+  }
+  
+  @media screen and (max-width: 1400px) {
+  }
+  @media screen and (max-width: 1200px) {
+  }
+  @media screen and (max-width: 992px) {
+    .login-Input-container {
+      width: 240px;
+    }
+    .loginForm input {
+      padding: 7px 0 7px 4px;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .login-Input-container {
+      width: 240px;
+    }
+    .loginForm input {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .loginForm {
+      padding: 10px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .loginForm {
+      padding: 8px;
+    }
+    .login-Input-container {
+      width: 200px;
+    }
+    .loginForm input {
+      font-size: 0.8rem;
+      max-width: 250px;
+    }
+    .loginBtn {
+      width: 50%;
+    }
+    .guestMode {
+      width: 50%;
+    }
+    .loginForm p {
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .loginForm {
+      padding: 7px;
+    }
+    .login-Input-container {
+      width: 180px;
+    }
+    .loginForm input {
+      font-size: 0.8rem;
+      width: 130px;
+    }
+    .login-Input-container i {
+      font-size: 0.9rem;
+    }
+    .loginBtn {
+      width: 40%;
+      font-size: 0.75rem;
+    }
+    .guestMode {
+      width: 45%;
+      font-size: 0.75rem;
+    }
+    .loginForm p {
+      font-size: 0.8rem;
+    }
+  }
+  

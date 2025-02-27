@@ -1,0 +1,77 @@
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .notfound-title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .notfound-message {
+    font-size: 1.5rem;
+    color: #374151;
+    margin-top: 10px;
+  }
+  
+  .notfound-text {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-top: 5px;
+  }
+  
+  .notfound-link {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .notfound-link:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .notfound-title {
+      font-size: 4rem;
+    }
+    .notfound-message {
+      font-size: 1.2rem;
+    }
+    .notfound-text {
+      font-size: 1rem;
+    }
+    .notfound-link {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .notfound-title {
+      font-size: 3rem;
+    }
+    .notfound-message {
+      font-size: 1rem;
+    }
+    .notfound-text {
+      font-size: 0.9rem;
+    }
+    .notfound-link {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }
+  

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+  }
+  .navheader {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    /* border: 2px solid red; */
+  }
+  a {
+    text-decoration: none;
+  }
+  .NavBar {
+    padding: 0 7%;
+    /* margin-bottom: 15px; */
+    position: relative;
+  }
+  .logoContainer {
+    text-decoration: none;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  .logoLeft {
+    color: #050c9c;
+  }
+  .logoRight {
+    color: #f4651e;
+  }
+  .navUpperPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+  }
+  
+  .linksContainer {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0 30px;
+  }
+  .linksContainer li {
+    margin-right: 20px;
+  }
+  .linksContainer li:hover {
+    /* transform: scale(1.05);
+    transition: all 0.2s linear; */
+  
+    border-radius: 40px;
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 10px;
+  }
+  .logoutbtn{
+    all: unset; 
+  }
+  .linksContainer a i {
+    font-size: 18px;
+  }
+  .linksContainer a:hover {
+    color: #050c9c;
+    /* border: 2px solid #050c9c; */
+    border-radius: 30px;
+    background-color: rgb(161, 237, 237);
+  }
+  .navLinkIcon {
+    margin: 0 8px 0 0;
+    font-size: 22px;
+  }
+  .active {
+    color: #f4651e;
+    border: 2px solid #050c9c;
+    border-radius: 30px;
+  }
+  
+  .bars {
+    display: none;
+  }
+  .bars button {
+    /* width: 50px; */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 20px;
+  }
+  .bars button i {
+    font-size: 28px;
+  }
+  .Account {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+  }
+  .account-dropdown {
+    position: absolute;
+    list-style-type: none;
+    background-color: white;
+    padding: 20px 10px 10px 10px;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+  
+  }
+  .accoun-dropdown a {
+    color: black;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .accoun-dropdown a:hover {
+    color: #f4651e;
+    background-color: transparent;
+  }
+  @media screen and (max-width: 1400px) {
+    .NavBar {
+      padding: 0 2%;
+    }
+    .linksContainer li {
+      margin-right: 14px;
+    }
+    .linksContainer a {
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .link {
+      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    .NavBar {
+      padding: 0 3%;
+    }
+    .logo {
+      font-size: 33px;
+    }
+    .linksContainer li {
+      margin-right: 7px;
+    }
+    .linksContainer a {
+      font-size: 16px;
+      font-weight: 600;
+      padding: 7px 7px;
+    }
+    .linksContainer a i {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .logo {
+      font-size: 28px;
+    }
+    .linksContainer li {
+      margin-right: 5px;
+    }
+    .linksContainer a {
+      font-size: 15px;
+      font-weight: 600;
+      padding: 6px 6px;
+    }
+    .linksContainer {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    /* .NavBar {
+      padding: 0 4%;
+    } */
+    .logo {
+      font-size: 25px;
+    }
+    .linksContainer li {
+      margin-right: 5px;
+    }
+    .linksContainer a {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .linksContainer a i {
+      font-size: 15px;
+    }
+    .Account {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .NavBar {
+      padding: 0 4%;
+    }
+    .bars {
+      display: block;
+    }
+    .linksContainer {
+      display: none;
+      position: absolute;
+      top: 67px;
+      left: -200px;
+      width: 180px; /* Initial width */
+      height: 100vh;
+      flex-direction: column;
+      background-color: white;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 10px 15px;
+      overflow: auto;
+      scrollbar-width: none;
+      visibility: hidden;
+      transition: left 2s ease-in-out, width 0.5s ease-in-out,
+        visibility 0.5s ease-in-out;
+    }
+    .logoContainer {
+      order: 2;
+    }
+    .bars {
+      order: 1;
+    }
+    .linksContainer li {
+      margin: 12px 0;
+    }
+    .linksContaineractive {
+      display: flex !important;
+      left: 0;
+      visibility: visible;
+      z-index: 1000;
+    }
+    .Account {
+      margin-left: 5px;
+    }
+    .accoun-dropdown li {
+      margin: 0 0;
+    }
+    /* .Acctoun-cont {
+      position: relative;
+    }
+      
+    .accoun-dropdown {
+      position: absolute;
+      top: -50px;
+      left: 150px;
+      list-style-type: none;
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 0 5px black;
+      margin-top: 7px;
+      border-radius: 5px;
+      z-index: 2000;
+    } */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .NavBar {
+      padding: 0 6%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .NavBar {
+      padding: 0 4%;
+    }
+  }
+  

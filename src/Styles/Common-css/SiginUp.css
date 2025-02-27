@@ -1,0 +1,141 @@
+.signupContainer {
+    display: grid;
+    place-items: center;
+    height: 87vh;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/07/29/64/91/1000_F_729649141_s4GhpR3YuF70bau356SmRMLGPdDhNApe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .signupContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 1;
+  }
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 20px;
+    align-items: center;
+  }
+  .signup-input-cont {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 2px 10px;
+    width: 260px;
+  }
+  .signupForm input {
+    padding: 8px;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    background-color: transparent;
+    /* color: rgb(6, 6, 6); */
+    /* color: white; */
+  }
+  .signupForm input::placeholder {
+    color: rgba(39, 38, 38, 0.863);
+  }
+  .signupSumbitBtn {
+    width: 60%;
+    padding: 10px 0;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: rgba(255, 94, 0, 0.993);
+    color: white;
+    font-weight: 600;
+  }
+  .loginText{
+    color: white;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .signupForm {
+      gap: 12px;
+    }
+    .signup-input-cont {
+      width: 230px;
+    }
+    .signupForm input {
+      padding: 7px;
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .signupForm {
+      gap: 10px;
+      padding: 10px;
+    }
+    .signup-input-cont {
+      width: 230px;
+    }
+    .signupForm input {
+      padding: 7px;
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .signupForm input {
+      padding: 7px;
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .signupForm {
+      gap: 10px;
+      padding: 10px;
+    }
+    .signup-input-cont {
+      width: 220px;
+    }
+    .signupForm input {
+      padding: 7px;
+      font-size: 0.7rem;
+    }
+    .signupForm p {
+      font-size: 0.8rem;
+    }
+    .signupSumbitBtn {
+      width: 50%;
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .signupForm {
+      gap: 10px;
+      padding: 10px;
+    }
+    .signupForm h2 {
+      font-size: 1.1rem;
+    }
+    .signup-input-cont {
+      width: 180px;
+    }
+    .signupForm input {
+      padding: 7px;
+      font-size: 0.7rem;
+    }
+    .signupForm p {
+      font-size: 0.8rem;
+    }
+    .signupSumbitBtn {
+      width: 45%;
+      font-size: 0.8rem;
+    }
+  }
+  

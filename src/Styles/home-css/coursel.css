@@ -1,0 +1,51 @@
+.review-main-div{
+  padding: 0px 10px;
+}
+.testimonilas{
+  padding-top: 10px;
+  text-decoration: underline;
+  text-decoration-color: #f17725;
+}
+.d-block {
+    object-fit: cover;
+    width: 100%; /* Full width of the screen */
+    height: 82vh; /* Full height of the viewport */
+    margin: 0;
+}
+.carousel-item {
+    border: none; /* Remove any borders */
+    outline: none; /* Remove focus outline if any */
+  }
+  
+  .carousel-item.active {
+    border: none !important; /* Ensure active item has no border */
+    box-shadow: none !important; /* Remove any box-shadow if present */
+  }
+  .Carousel-overlap{
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    padding: 30px 10px;
+    background-image: linear-gradient(to right,#f3914f5e ,#3b437162);
+    border-radius: 10px;
+  }
+  .Carousel-inner-text{
+    color: white;
+    font-size: 2rem;
+  }
+  .Carousel-inner-text2{
+    color: white;
+    font-size: 1.5rem;
+  }
+  .Carousel-btn{
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #f17725;
+    transition:transform 1s;
+  }
+  .Carousel-btn:hover{
+    background-color: #021c79d7;
+    color: black;
+    transform: scale(1.2,1.2);
+  }
+  
+

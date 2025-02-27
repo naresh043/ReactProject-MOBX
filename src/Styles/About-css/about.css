@@ -1,0 +1,91 @@
+.about-us{
+    padding: 0px 20px;
+    font-size: 1.8rem;
+}
+
+.about-container {
+  margin: 0px 5%;
+}
+
+.elerrn-container,
+.target-container,
+.future-enhancements,
+.call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+}
+
+.elerrn-container > div,
+.target-container > div,
+.future-enhancements > div,
+.call-to-action > div {
+  flex: 1 1 48%;
+  margin: 10px;
+  /* border: 2px solid red; */
+}
+
+.img-about {
+  width: 100%; /* Make it responsive */
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image fits within the box without distortion */
+  border-radius: 20px;
+}
+.img-about:hover{
+    box-shadow: 1px 1px 4px black, -1px -1px 4px black;
+    /* border: 2px solid red; */
+}
+
+h2, h3 {
+  color: #333;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+.theme-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-image: linear-gradient(to right, #FDC830, #FF4E50);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.theme-btn:hover {
+    color: white;
+    background-image: linear-gradient(to right, #f16a0f, #0e2ee6f3);
+    transform: scale(1.05);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .elerrn-container > div,
+  .target-container > div,
+  .future-enhancements > div,
+  .call-to-action > div {
+    flex: 1 1 100%;
+  }
+
+  .img-about {
+    width: 100%;
+    height: 200px; 
+
+  }
+}
+  

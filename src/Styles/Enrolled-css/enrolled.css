@@ -1,0 +1,190 @@
+/* General Styles */
+.enrolled-name {
+  padding: 0px 20px;
+  font-size: 1.8rem;
+}
+
+.course-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.course-card-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #3b3b6d;
+  border-radius: 12px 0 0 12px;
+  color: #ffffff;
+}
+
+.course-card-left h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.course-card-left a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.course-card-left a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.course-card-right {
+  flex: 3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333333;
+  width: 100%; /* Adjust width for better responsiveness */
+}
+
+.course-card-right h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #6a6a6a;
+}
+
+.course-card-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-card-right li {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #5a5a5a;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.progress-bar {
+  background: #eaeaea;
+  border-radius: 5px;
+  width: 80%;
+  height: 8px;
+  position: relative;
+}
+
+.progress-bar span {
+  display: block;
+  background: #f5af19;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+}
+
+.btn-div-enrolled {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Adjust for smaller screens */
+  gap: 10px; /* Space between buttons */
+}
+
+.continue-button, .delete-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.continue-button {
+  background: #3b3b6d;
+  color: #ffffff;
+}
+
+.continue-button:hover {
+  background-image: linear-gradient(to right, #f16a0f, #0e2ee6f3);
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background: #f16a0f;
+  color: #ffffff;
+}
+
+.delete-button:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+.courses-container {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.no-enrolled-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 98.5vw;
+  box-sizing: border-box;
+}
+
+.no-enrolled-message {
+  max-width: 90%;
+  max-height: 60%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* For devices smaller than tablets */
+  .course-card {
+      flex-direction: column; /* Stack content vertically */
+  }
+
+  .course-card-left, .course-card-right {
+      width: 100%; /* Full width for both sections */
+      border-radius: 12px; /* Match styles */
+  }
+
+  .btn-div-enrolled {
+      justify-content: center; /* Center buttons */
+  }
+}
+
+@media (max-width: 480px) { /* For smaller mobile devices */
+  .enrolled-name {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+  .progress-bar {
+      width: 100%; /* Full width for progress bar */
+  }
+
+  .continue-button, .delete-button {
+      font-size: 0.9rem;
+      padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+}
